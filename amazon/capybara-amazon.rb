@@ -23,8 +23,8 @@ module Crawler
     end
 
     def portal
-      select('',
-        :from => '')
+#      select('',
+#        :from => '')
       select('昨日', :from => 'preSelectedPeriod')
       first('.line-item-links').click_link("レポート全体を表示")
     end
